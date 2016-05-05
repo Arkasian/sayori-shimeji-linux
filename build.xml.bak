@@ -2,15 +2,15 @@
 <project name="Shimeji" basedir="." default="jar">
   <property name="version" value="2.2.2" />
   
-  	<target name="clean">
-		<delete dir="target" />
-		<mkdir dir="target"/>
-		<delete file="Shimeji.jar"/>
-	</target>
-
+  <target name="clean">
+    <delete dir="classes" />
+    <mkdir dir="classes"/>
+    <delete file="Shimeji.jar"/>
+  </target>
+  
   <target name="compile" depends="clean">
-    <mkdir dir="target/classes" />
-    <javac destdir="target/classes" target="6" debug="yes" optimize="yes" encoding="UTF-8"  >
+    <mkdir dir="classes" />
+    <javac destdir="classes" optimize="yes" encoding="UTF-8" includeantruntime="false" debug="true" debuglevel="lines, vars, source">
       <src path="src"/>
       <src path="src_generic"/>
       <src path="src_x11"/>
@@ -21,11 +21,9 @@
   </target>
     
   <target name="jar" depends="compile">
-    <jar destfile="target/Shimeji.jar" basedir="target/classes" manifest="MANIFEST.MF" />
+    <jar destfile="Shimeji.jar" basedir="classes" manifest="MANIFEST.MF" />
   </target>
   
 </project>
-
-
 
 
