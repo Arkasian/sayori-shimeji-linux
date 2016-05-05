@@ -45,7 +45,8 @@ git clone https://github.com/asdfman/linux-shimeji.git OR download a zip archive
 
 To run, execute launch.sh in the project root directory. (eg. ./launch.sh)
 
-To build, execute 'ant' in the project root directory.
+To build, execute 'ant' in the project root directory. Then copy jar file from target to project root:
+"$cp target/Shimeji.jar ./"
 
 Note that the program comes pre-compiled and you do not need to build unless you plan to modify the source.
 
