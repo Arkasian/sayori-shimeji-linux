@@ -1,6 +1,9 @@
-![Shimeji for Linux](http://i.imgur.com/efHyX.png "Shimeji for Linux")
-Shimeji for Linux
-=================
+![Shimeji for Linux, Sayori version!](https://i.imgur.com/YB9Mdtm.png "Shimeji for Linux, Sayori version!")
+
+Shimeji for Linux (Sayori version)
+==================================
+
+NOTICE: This is a forked version of linux-shimeji for Linux, because I wanted a version with Sayori from Doki Doki Literature Club in it!
 
 This is a Linux version of the popular desktop mascot program, Shimeji.
 
@@ -45,8 +48,7 @@ git clone https://github.com/asdfman/linux-shimeji.git OR download a zip archive
 
 To run, execute launch.sh in the project root directory. (eg. ./launch.sh)
 
-To build, execute 'ant' in the project root directory. Then copy jar file from target to project root:
-"$cp target/Shimeji.jar ./"
+To build, execute 'ant' in the project root directory.
 
 Note that the program comes pre-compiled and you do not need to build unless you plan to modify the source.
 
